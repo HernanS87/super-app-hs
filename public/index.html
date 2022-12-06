@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supper App</title>
+    <link rel="stylesheet" href="Style/style.css" />
+
+    <meta name="author" content="Hernán Santarelli" />
+
+    <meta name="robots" content="index follow" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h2>SuperApp 🛒</h2>
+    </header>
+    <section id="firstScreen">
+      <h1>¿Qué estas esperando?</h1>
+      <h2>Anota tus compras aquí...</h2>
+    </section>
+    <button id="add">+</button>
+    <section id="popUpScreen">
+      <div id="popup">
+        <button id="close-popup">X</button>
+        <h2 id="tittle_popup">Crea Tu Super Lista!!</h2>
+        <input
+          id="nameProd"
+          type="text"
+          placeholder="Producto..."
+          maxlength="13"
+        />
+        <select id="typeProd" aria-placeholder="Categoría">
+          <option value="">Categoría</option>
+          <option id="frutas" value="Images/frutas.png">🍓Frutas</option>
+          <option id="verduras" value="Images/verduras.png">🥑Verduras</option>
+          <option id="pastas" value="Images/pastas.png">🍜Pastas</option>
+          <option id="carnes" value="Images/carnes.png">🥩Carnes</option>
+          <option id="lacteos" value="Images/lacteos.png">🧀Lácteos</option>
+        </select>
+        <textarea
+          id="descriptionProd"
+          cols=""
+          rows="5"
+          placeholder="Mas info..."
+        ></textarea>
+        <button type="button" id="save">Agregar</button>
+      </div>
+    </section>
+    <section id="listScreen">
+      <ul id="list-container"></ul>
+    </section>
+    <section id="infoScreen_modal">
+      <div id="infoScreen">
+        <button id="close-infoScreen">X</button>
+        <img id="imgInfo" src="" alt="" />
+        <h2 id="nameInfo">Nombre del item</h2>
+        <p id="descriptionInfo">Descripcion</p>
+      </div>
+    </section>
+
+    <script src="JavaScript/main.js"></script>
+  </body>
+</html>
